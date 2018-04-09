@@ -1,0 +1,20 @@
+//font
+$sans-serif: 'Montserrat', sans-serif;
+$serif: 'Slabo';
+
+//color
+$primary-color: #4DC5D6;
+
+$secondary-color: #D31D8C;
+
+$grey: #515151;
+
+
+//headings
+.section-heading {
+  font-size: 3rem;
+  font-family: $sans-serif;
+  padding: 2rem 0;
+  color: $grey;
+  font-weight: 400;
+}

@@ -1,0 +1,30 @@
+.chevron{
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 95%;
+    display:block;
+    height:40px;/*height should be double border*/
+    z-index: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+}
+
+.chevron:before,
+.chevron:after{
+    position:absolute;
+    display:block;
+    content:"";
+    border:20px solid transparent;/*adjust size*/
+}
+/*Change four 'top' values below to rotate (top/right/bottom/left)*/
+.chevron:before{
+    top:0;
+    border-top-color: $primary-color;/*Chevron Color*/
+}
+.chevron:after{
+    top:-10px;/*adjust thickness*/
+    border-top-color: rgba($secondary-color, 0.75);/*Match background colour*/
+}
