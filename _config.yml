@@ -13,3 +13,9 @@ markdown: kramdown
 exclude:
 - README.md
 - LICENSE.md
+
+sass:
+  style: compact # possible values: nested expanded compact compressed
+
+sass:
+    sass_dir: _sass

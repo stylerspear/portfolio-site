@@ -3,28 +3,27 @@
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ 'css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ 'css/main.css' }}">
 </head>
 <body>
+    <div id="nav">
+      <div class="container nav__items">
+        <a href="{{ 'index.html' | relative_url }}" id="nav__logo">TS</a>
+        <div class="nav__links">
+          <a href="{{ 'index.html' | relative_url }}"><span>About</span></a>
+          <span class="nav__divider"></span>
+          <a href="{{ 'two.html'   | relative_url }}">Projects<span></span></a>
+        </div>
+        <!--  nav links -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- nav -->
 
 
-<div id="header">
-  <span class='big'>{{ site.title }}</span>
-  <span class='small'>{{ site.subtitle }}</span>
-</div>
-
-<div id="nav">
-  <a href="{{ 'index.html' | relative_url }}">Welcome</a> •
-  <a href="{{ 'two.html'   | relative_url }}">Page Two</a> •
-  <a href="{{ 'three.html' | relative_url }}">Page Three</a> •
-  <a href="http://groups.google.com/group/wwwmake">Questions? Comments?</a> •
-  <a href="https://github.com/henrythemes/jekyll-starter-theme">About</a>
-</div>
-
-<div id="content">
-  {{ content }}
-</div>
+  <div id="content">
+    {{ content }}
+  </div>
 
 </body>
 </html>
-
