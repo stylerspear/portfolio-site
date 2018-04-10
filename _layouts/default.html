@@ -9,12 +9,20 @@
     <div id="nav">
       <div class="container nav__items">
         <a href="{{ 'index.html' | relative_url }}" id="nav__logo">TS</a>
+
         <div class="nav__links">
           <a href="{{ 'index.html' | relative_url }}"><span>About</span></a>
           <span class="nav__divider"></span>
           <a href="{{ 'two.html'   | relative_url }}">Projects<span></span></a>
         </div>
         <!--  nav links -->
+
+        <div class="nav__social">
+          <i class="fas fa-envelope nav__social-link"></i>
+          <i class="fab fa-github nav__social-link"></i>
+          <i class="fab fa-instagram nav__social-link"></i>
+        </div>
+
       </div>
       <!-- container -->
     </div>
@@ -25,5 +33,20 @@
     {{ content }}
   </div>
 
+  <footer class="footer">
+    <p>Thanks for visiting!</p>
+
+    <div class="footer__social">
+      <i class="fas fa-envelope footer__social-link"></i>
+      <i class="fab fa-github footer__social-link"></i>
+      <i class="fab fa-instagram footer__social-link"></i>
+    </div>
+
+    <p>Tyler Spear 	&copy {{ site.time | date: '%Y' }}</p>
+
+  </footer>
 </body>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
 </html>

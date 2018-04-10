@@ -12,9 +12,16 @@ $grey: #515151;
 
 //headings
 .section-heading {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: $sans-serif;
   padding: 2rem 0;
-  color: $grey;
   font-weight: 400;
+}
+
+.section-heading--grey {
+  color: $grey;
+}
+
+.section-heading--white {
+  color: #fff;
 }

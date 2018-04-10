@@ -89,3 +89,22 @@
   background: linear-gradient(to top, $primary-color 0%, $secondary-color 100%);
   margin: 0 -0.45rem;;
 }
+
+.nav__social {
+  flex: 0 1 auto;
+  text-align: right;
+}
+
+.nav__social-link {
+  font-size: 2rem;
+  transition: 0.3s;
+
+  &:not(:last-child) {
+    margin-right: 0.75rem;
+  }
+
+  &:hover {
+    color: $secondary-color;
+    cursor: pointer;
+  }
+}

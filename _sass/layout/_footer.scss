@@ -1,0 +1,24 @@
+.footer {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-family: $sans-serif;
+
+  p {
+    display: block;
+    padding-bottom: 1rem;
+  }
+}
+
+.footer__social {
+  padding-bottom: 1rem;
+}
+
+.footer__social-link {
+  font-size: 2rem;
+  transition: 0.2s;
+
+  &:hover {
+    color: $secondary-color;
+    cursor: pointer;
+  }
+}
