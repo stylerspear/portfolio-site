@@ -1,0 +1,124 @@
+.project {
+  font-family: $sans-serif;
+  color: $grey;
+  padding: 2rem 0;
+  animation: fadein 4s;
+
+  img {
+    padding: 2rem 0;
+  }
+}
+
+.project__heading {
+  font-size: 4rem;
+  font-weight: 200;
+  padding: 2rem 0;
+  position: relative;
+  display: inline-block;
+
+  &::after, &::before {
+    position: absolute;
+    border: 20px solid transparent;
+    height:40px;/*height should be double border*/
+    transform: rotate(-90deg) translateY(-50%);
+    top: 15%;
+  }
+
+  &::after {
+  	content: '';
+  	display: inline-block;
+    right: -120px;
+  	vertical-align: top;
+    border-top-color: $primary-color;/*Chevron Color*/
+    z-index: 0;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    right: -110px;
+    vertical-align: top;
+    border-top-color: rgba($secondary-color, 0.75);/*Match background colour*/
+    z-index: 2
+  }
+
+}
+
+.project__subheading {
+  font-size: 2rem;
+}
+
+//this is for the img posts within a project
+
+.project__image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.project__image-cell {
+  margin: 1rem;
+  width: calc((100%/3) - 2rem);
+}
+
+.project__image {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+///
+
+//styling for the project on the home page
+
+//
+.project-hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  margin-top: 62px; //top offset nav
+  font-family: $sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 10rem 0;
+  position: relative;
+  z-index: 0;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to bottom right, rgba(77,197,214, 0.6) 0%, rgba(211,29,140,0.6) 100%);
+    z-index: -1;
+  }
+
+}
+.project-hero__banner {
+  position: absolute;
+  animation: fadeInAndUp 2s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-hero__heading {
+  font-size: 4rem;
+  font-weight: 200;
+  z-index: 1;
+}
+
+.project-hero__subheading {
+  font-size: 1.5rem;
+}
+
+//end of project styling

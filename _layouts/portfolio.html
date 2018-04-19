@@ -32,8 +32,23 @@
 
 
   <div id="content">
-    {{ content }}
+    <div class="project-hero" style="background-image: url({{ page.image }});">
+
+      <div class="project-hero__banner">
+        <h1 class="project-hero__heading">{{ page.title }}</h1>
+        <h3 class="project-hero__subheading">{{ page.description }}</h3>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <section class="project">
+        {{ content }}
+      </section>
+    </div>
   </div>
+
+
 
   <footer class="footer">
     <p>Thanks for visiting!</p>
