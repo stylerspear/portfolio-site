@@ -3,10 +3,6 @@
   color: $grey;
   padding: 2rem 0;
   animation: fadein 4s;
-
-  img {
-    padding: 2rem 0;
-  }
 }
 
 .project__heading {
@@ -58,7 +54,7 @@
 
 .project__image-cell {
   margin: 1rem;
-  width: calc((100%/3) - 2rem);
+  border: 2px solid $grey;
 }
 
 .project__image {
@@ -66,10 +62,9 @@
   max-width: 100%;
 }
 
-
-
-
-
+.project__image--full {
+  display: block;
+}
 
 
 ///
