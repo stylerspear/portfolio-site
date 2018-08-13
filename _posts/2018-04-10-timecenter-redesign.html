@@ -1,0 +1,65 @@
+---
+layout: portfolio
+title:  Time Center Redesign
+categories: secondary
+description: Redesign of a current web application to clock in and out of work.
+image: /img/alarm-clock.jpg
+---
+
+<h2 class="project__heading">The Project</h2>
+<p>
+  This project spawned out of a real problem my coworkers experience on a day to day basis with the web app we
+  use to clock in and out of work. The main issue with the application is that it allows someone who has already clocked
+  in to work to clock in a second time later in the day when they were actually attempting to click the "clock out" button.
+  Unfortunately there is no "undo" feature so the only way to correct the time sheet is to ask a manager to go in and manually
+  adjust the time.
+</p>
+<br>
+<p>
+  I think this is a simple problem to fix and in doing so it would assist many frustrated users, as well as their managers
+  who won't have to spend their time fixing a mistake caused by poor user design.
+</p>
+
+<h2 class="project__heading">The Problem</h2>
+<p>
+  As previously stated the problem is the ability for an end user to mistakenly clock in or out twice in a row, thereby putting an
+  invalid time entry on their time sheet. The clock in and out buttons are right next to one another and look identical other than
+  their verbiage. Below is a screenshot of the current user interface.
+</p>
+<br>
+<img src="/img/timecenter-current.png" class="project__image project__image--full" alt="time center current design">
+<br>
+<h2 class="project__heading">The Solution</h2>
+<p>
+  My proposed solution is simple, but an effective one that will eliminate the possibility of clicking clock
+  in or out twice in a row. In my design, once a user has clocked in, when they navigate back to the site when clocking out
+  for the day, they will only have the clock out button available. Similarly, when they go to clock back in the next day
+  only the "Clock In" option will be available.
+</p>
+<h2 class="project__heading">Scenario Mapping</h2>
+<img src="/img/time-center-scenario-map.png" class="project__image project__image--full" alt="time center scenario map">
+<h2 class="project__heading">Final Design</h2>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-sm-12 col-md-6">
+      <img src="/img/time-center-clock-in-1.png" alt="time center clock in" class="project__image">
+    </div>
+
+    <div class="col-sm-12 col-md-6">
+      <img src="/img/time-center-clock-in-2.png" alt="time center clock in" class="project__image">
+    </div>
+
+    <div class="col-sm-12 col-md-6">
+      <img src="/img/time-center-clock-out-1.png" alt="time center clock out" class="project__image">
+    </div>
+
+    <div class="col-sm-12 col-md-6">
+      <img src="/img/time-center-clock-out-2.png" alt="time center clock out" class="project__image">
+    </div>
+
+  </div>
+
+</div>

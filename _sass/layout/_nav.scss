@@ -101,6 +101,7 @@
 .nav__social-link {
   font-size: 2rem;
   transition: 0.3s;
+  color: $grey;
 
   &:not(:last-child) {
     margin-right: 0.75rem;

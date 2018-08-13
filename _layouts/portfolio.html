@@ -3,29 +3,30 @@
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="icon" type="image/png" href="/img/favicon.ico">
   <link rel="stylesheet" href="{{ '/css/main.css' }}">
+  <link rel="stylesheet" href="{{ '/css/sass-flexbox.min.css' }}">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 </head>
 <body>
     <div id="nav">
       <div class="container nav__items">
-        
+
         <div class="logo-container">
           <a href="{{ 'index.html' | relative_url }}" id="nav__logo">TS</a>
         </div>
 
         <div class="nav__links">
-          <a href="{{ 'index.html' | relative_url }}"><span>About</span></a>
+          <a href="{{ 'index.html' | relative_url }}"><span>Home</span></a>
           <span class="nav__divider"></span>
-          <a href="{{ 'two.html'   | relative_url }}">Projects<span></span></a>
+          <a href="{{ 'index.html#portfolio'   | relative_url }}">Projects<span></span></a>
         </div>
         <!--  nav links -->
 
         <div class="nav__social">
-          <i class="fas fa-envelope nav__social-link"></i>
+          <a class="fas fa-envelope nav__social-link"></a>
           <i class="fab fa-github nav__social-link"></i>
-          <i class="fab fa-instagram nav__social-link"></i>
         </div>
 
       </div>
@@ -68,5 +69,9 @@
 </body>
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="./js/main.js" ></script>
 </html>

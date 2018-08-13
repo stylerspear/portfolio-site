@@ -23,33 +23,37 @@ title:  Home
   <a href="#about" id="about" class="anchor"></a>
   <div class="container">
     <h3 class="section-heading section-heading--grey">About Me</h3>
-    <div class="grid">
+    <div class="row">
 
-      <div class="col-1-2">
+      <div class="col-sm-12 col-md-6">
         <img src="http://unsplash.it/500/500" alt="profile-picture" class="about__picture">
       </div>
 
-      <div class="col-1-2">
+      <div class="col-sm-12 col-md-6">
         <div class="about__text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Born and raised in Kansas City, MO. I attended school at the University of Missouri to receive my degree in education.
+            During this time, I gained insight into designing instructional material to fit a wide array of learners.
+            I also gained experience in human psychology and understanding why people do what they do. During my time in school
+            I also taught myself web development skills such as HTML, CSS, and JavaScript.
+          </p>
+          <br>
+          <p>
+            I enjoy User Experience Design because you learn to spot opportunites to improve usability and solve
+            problems for both the customer and business. It is also an opportunity my creative problem solving skills.
+          </p>
+          <br>
+          <p>
+            I begin each design process by coming up with a list of problems or hurdles coming between a business and its users.
+            I then brainstorm possible solutions to solve those problems. Through an iterative study and design process I hone in
+            on specific design choices that will create an overall better user experience.
           </p>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+
 
         </div>
 
-        <a class="btn-cta">
+        <a href="{{ site.url }}/assets/resume.pdf" class="btn-cta" target="_blank">
           <span>View Resume</span>
         </a>
 
@@ -65,37 +69,11 @@ title:  Home
   <div class="container">
     <h3 class="section-heading section-heading--white">Portfolio</h3>
 
-    <div class="grid portfolio__grid">
+    <div class="row portfolio__grid">
 
       {% for post in site.categories.primary %}
 
-        <a href="{{ post.url }}" class="col-1-1 portfolio__item">
-          <div class="portfolio__image" style="background-image: url({{ post.image }});">
-            <div class="portfolio__text">
-              <h3 class="portfolio__heading">{{ post.title }}</h3>
-              {{ post.description }}
-            </div>
-          </div>
-        </a>
-
-      {% endfor %}
-
-      {% for post in site.categories.secondary %}
-
-        <a href="{{ post.url }}" class="col-2-2 portfolio__item">
-          <div class="portfolio__image" style="background-image: url({{ post.image }});">
-            <div class="portfolio__text">
-              <h3 class="portfolio__heading">{{ post.title }}</h3>
-              {{ post.description }}
-            </div>
-          </div>
-        </a>
-
-      {% endfor %}
-
-      {% for post in site.categories.tertiary %}
-
-        <a href="{{ post.url }}" class="col-2-2 portfolio__item">
+        <a href="{{ post.url }}" class="col-md-12 portfolio__item">
           <div class="portfolio__image" style="background-image: url({{ post.image }});">
             <div class="portfolio__text">
               <h3 class="portfolio__heading">{{ post.title }}</h3>
@@ -107,7 +85,42 @@ title:  Home
       {% endfor %}
 
     </div>
-    <!--  grid  -->
+
+    <div class="row">
+
+      {% for post in site.categories.secondary %}
+
+        <a href="{{ post.url }}" class="col-md-6 portfolio__item">
+          <div class="portfolio__image" style="background-image: url({{ post.image }});">
+            <div class="portfolio__text">
+              <h3 class="portfolio__heading">{{ post.title }}</h3>
+              {{ post.description }}
+            </div>
+          </div>
+        </a>
+
+      {% endfor %}
+
+    </div>
+
+    <div class="row">
+
+      {% for post in site.categories.tertiary %}
+
+        <a href="{{ post.url }}" class="col-md-12 portfolio__item">
+          <div class="portfolio__image" style="background-image: url({{ post.image }});">
+            <div class="portfolio__text">
+              <h3 class="portfolio__heading">{{ post.title }}</h3>
+              {{ post.description }}
+            </div>
+          </div>
+        </a>
+
+      {% endfor %}
+
+    </div>
+    <!--  row  -->
+    
   </div>
   <!--  container  -->
 </section>
