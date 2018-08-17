@@ -10,28 +10,28 @@
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 </head>
 <body>
-    <div id="nav">
-      <div class="container nav__items">
+  <div id="nav">
+    <div class="container nav__items">
 
-        <div class="logo-container">
-          <a href="{{ 'index.html' | relative_url }}" id="nav__logo">TS</a>
-        </div>
-
-        <div class="nav__links">
-          <a href="{{ 'index.html' | relative_url }}"><span>Home</span></a>
-          <span class="nav__divider"></span>
-          <a href="{{ 'index.html#portfolio'   | relative_url }}">Projects<span></span></a>
-        </div>
-        <!--  nav links -->
-
-        <div class="nav__social">
-          <a class="fas fa-envelope nav__social-link"></a>
-          <i class="fab fa-github nav__social-link"></i>
-        </div>
-
+      <div class="logo-container">
+        <a href="{{ 'index.html' | relative_url }}" id="nav__logo">TS</a>
       </div>
-      <!-- container -->
+
+      <div class="nav__links">
+        <a href="{{ 'index.html' | relative_url }}"><span>Home</span></a>
+        <span class="nav__divider"></span>
+        <a href="{{ 'index.html#portfolio'   | relative_url }}">Projects<span></span></a>
+      </div>
+      <!--  nav links -->
+
+      <div class="nav__social">
+        <a href="mailto:stylerspear@gmail.com" class="nav__social-link"><i href="" class="fas fa-envelope nav__social-link"></i></a>
+        <a href="https://github.com/tylerspear" class="nav__social-link"><i class="fab fa-github"></i></a>
+      </div>
+
     </div>
+    <!-- container -->
+  </div>
     <!-- nav -->
 
 
@@ -58,9 +58,8 @@
     <p>Thanks for visiting!</p>
 
     <div class="footer__social">
-      <i class="fas fa-envelope footer__social-link"></i>
-      <i class="fab fa-github footer__social-link"></i>
-      <i class="fab fa-instagram footer__social-link"></i>
+      <a href="mailto:stylerspear@gmail.com" class="footer__social-link"><i href="" class="fas fa-envelope nav__social-link"></i></a>
+      <a href="https://github.com/tylerspear" class="footer__social-link" target="_blank"><i class="fab fa-github"></i></a>
     </div>
 
     <p>Tyler Spear 	&copy {{ site.time | date: '%Y' }}</p>
